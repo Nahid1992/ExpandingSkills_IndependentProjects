@@ -3,8 +3,8 @@
 A collection of independent projects built to expand my engineering skills 
 beyond academic research.
 
-My background is in foundation models, computer vision, and large-scale 
-pretraining. These projects explore the complementary side of that work — 
+My research background is in AI/ML, Deep Learning, Computer Vision, Foundation Model, and Large-scale Pretraining. 
+These projects explore the complementary side of that work — 
 building things that run in production: RAG pipelines, agentic AI systems, 
 REST APIs, containerization, and cloud deployment.
 

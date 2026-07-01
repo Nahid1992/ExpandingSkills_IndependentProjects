@@ -16,35 +16,24 @@ source material.
 
 ---
 
-## Why I Built This
-
-My PhD research focused on building foundation models for medical image analysis. 
-While that work gave me deep expertise in model architecture and large-scale 
-pretraining, I wanted to develop practical skills in the modern AI/ML engineering 
-stack — specifically RAG pipelines, LangChain, REST API development, and 
-containerization with Docker. MedRAG is the first project in a series of 
-independent builds toward that goal.
-
----
-
 ## Architecture
-PDF Documents
-↓
-[ingest.py]
-Load → Chunk → Embed → Save FAISS Index
-↓
-FAISS Vector Store (local)
-↓
-[app.py — FastAPI Server]
-/query endpoint
-↓
-User Question → Embed → Retrieve Top-4 Chunks
-↓
-LangChain LCEL Chain
-{context + question} → Prompt → LLM → Answer
-↓
-JSON Response
-
+PDF Documents </br>
+↓ </br>
+[ingest.py] </br>
+Load → Chunk → Embed → Save FAISS Index </br>
+↓ </br>
+FAISS Vector Store (local) </br>
+↓ </br>
+[app.py — FastAPI Server] </br>
+/query endpoint </br>
+↓ </br>
+User Question → Embed → Retrieve Top-4 Chunks </br>
+↓ </br>
+LangChain LCEL Chain </br>
+{context + question} → Prompt → LLM → Answer </br>
+↓ </br>
+JSON Response </br>
+ 
 ---
 
 ## Tech Stack
@@ -61,13 +50,13 @@ JSON Response
 ---
 
 ## Project Structure
-MedRAG/
-├── data/               # Source PDF documents
-├── faiss_index/        # Generated vector index (after running ingest.py)
-├── ingest.py           # Load, chunk, embed PDFs → build FAISS index
-├── app.py              # FastAPI app with /query and /health endpoints
-├── requirements.txt
-└── Dockerfile
+MedRAG/ </br>
+├── data/               # Source PDF documents </br>
+├── faiss_index/        # Generated vector index (after running ingest.py) </br>
+├── ingest.py           # Load, chunk, embed PDFs → build FAISS index </br>
+├── app.py              # FastAPI app with /query and /health endpoints </br>
+├── requirements.txt </br>
+└── Dockerfile </br>
 
 ---
 

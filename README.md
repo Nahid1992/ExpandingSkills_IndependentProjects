@@ -11,8 +11,7 @@ REST APIs, containerization, and cloud deployment.
 
 ## Part of AI Portfolio
 
-This project is part of an ongoing series of independent builds focused on 
-developing industry AI/ML engineering skills:
+This project is part of an ongoing series of independent builds focused on developing AI/ML Engineering skills:
 
 | Project | Focus |
 |---|---|

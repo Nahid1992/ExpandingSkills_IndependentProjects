@@ -1,10 +1,27 @@
-## Runs:
-# python ingest.py
+"""
+ingest.py — Knowledge Base Builder for MedRAG
 
-## This will build the knowledge base
-# Load PDFs from local data/ directory and extract raw text;
-# Chunk: split raw text into smaller pieces (500 words each with 50 words overlap);
-# Embed and Store: converts chunks into vector using a model from HuggingFaceEmbeddings and stores the vector into FAISS index file;
+Processes PDF documents into a searchable vector index for use in the RAG pipeline.
+
+Pipeline:
+    1. Load    — Reads PDF files from the data/ directory and extracts raw text
+    2. Chunk   — Splits text into overlapping segments (500 tokens, 50 token overlap)
+                 to preserve context across chunk boundaries
+    3. Embed   — Converts each chunk into a dense vector representation using
+                 HuggingFace sentence-transformers (all-MiniLM-L6-v2)
+    4. Index   — Stores embeddings in a FAISS index for fast similarity search
+
+Output:
+    faiss_index/   — Saved locally; loaded at runtime by app.py for retrieval
+
+Usage:
+    python ingest.py
+
+Note:
+    Run this script once before starting the FastAPI server, or re-run
+    whenever source documents in data/ are added or updated.
+"""
+
 
 from langchain_community.document_loaders import PyPDFLoader
 # from langchain.text_splitter import RecursiveCharacterTextSplitter

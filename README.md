@@ -1,13 +1,13 @@
-# ExpandingSkills---IndependentProjects
+# ExpandingSkills — Independent Projects
 
-A collection of independent projects focused on building hands-on skills in modern AI/ML engineering, GenAI application development, and cloud deployment. </br>
+A collection of independent projects built to expand my engineering skills 
+beyond academic research.
 
-My PhD research centered on building foundation models for 
-large-scale medical image analysis in collaboration with Mayo Clinic. While 
-that work gave me deep expertise in Computer Vision, Foundation Models, Model Architecture, Large-Scale Pretraining, 
-and Distributed GPU training, I built this portfolio to develop the complementary 
-engineering skills that production AI systems demand — RAG pipelines, agentic 
-AI, REST APIs, containerization, and cloud deployment.
+My background is in foundation models, computer vision, and large-scale 
+pretraining. These projects explore the complementary side of that work — 
+building things that run in production: RAG pipelines, agentic AI systems, 
+REST APIs, containerization, and cloud deployment.
+
 
 ## Part of AI Portfolio
 

@@ -50,6 +50,7 @@ JSON Response </br>
 ---
 
 ## Project Structure
+```
 MedRAG/ </br>
 ├── data/               # Source PDF documents </br>
 ├── faiss_index/        # Generated vector index (after running ingest.py) </br>
@@ -57,7 +58,7 @@ MedRAG/ </br>
 ├── app.py              # FastAPI app with /query and /health endpoints </br>
 ├── requirements.txt </br>
 └── Dockerfile </br>
-
+```
 ---
 
 ## Getting Started

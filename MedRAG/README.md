@@ -17,6 +17,7 @@ source material.
 ---
 
 ## Architecture
+```
 PDF Documents </br>
 ↓ </br>
 [ingest.py] </br>
@@ -33,6 +34,7 @@ LangChain LCEL Chain </br>
 {context + question} → Prompt → LLM → Answer </br>
 ↓ </br>
 JSON Response </br>
+```
  
 ---
 
@@ -51,13 +53,13 @@ JSON Response </br>
 
 ## Project Structure
 ```
-MedRAG/ </br>
-├── data/               # Source PDF documents </br>
-├── faiss_index/        # Generated vector index (after running ingest.py) </br>
-├── ingest.py           # Load, chunk, embed PDFs → build FAISS index </br>
-├── app.py              # FastAPI app with /query and /health endpoints </br>
-├── requirements.txt </br>
-└── Dockerfile </br>
+MedRAG/ 
+├── data/               # Source PDF documents 
+├── faiss_index/        # Generated vector index (after running ingest.py) 
+├── ingest.py           # Load, chunk, embed PDFs → build FAISS index 
+├── app.py              # FastAPI app with /query and /health endpoints 
+├── requirements.txt 
+└── Dockerfile 
 ```
 ---
 
